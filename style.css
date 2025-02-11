@@ -16,6 +16,7 @@
     float: left;
     display: block;
     color: #f2f2f2;
+    font-size: 20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -38,11 +39,19 @@
 
   .header {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     color: navy;
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
+    overflow: hidden;
+  }
+
+  .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
  /* Create three equal columns that floats next to each other */
@@ -112,3 +121,31 @@
     display: table;
     clear: both;
   }
+
+    /*type writer effect for header*/
+    .typewriter h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 5vh;
+        color: rgb(0, 0, 75);
+        width: auto;
+        display: inline-block;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(0, 0, 75); /* The typwriter cursor */
+        white-space: nowrap; /*Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      /* The typing effect */
+      @keyframes typing{
+        from {max-width: 0}
+        to {max-width: 100%}
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color:rgb(0, 0, 75) }
+      } 
