@@ -48,7 +48,9 @@
   }
 
   .container{
-    height: 70px;
+    padding: 20px;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +127,7 @@
     /*type writer effect for header*/
     .typewriter h1 {
         font-family: "Montserrat", sans-serif;
-        font-size: 5vh;
+        font-size: 3vw;
         color: rgb(0, 0, 75);
         width: auto;
         display: inline-block;
